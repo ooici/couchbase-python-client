@@ -237,7 +237,10 @@ class RestConnection(object):
         return self.view_results(bucket, design_doc, view, {})
 
     def view_results(self, bucket, design_doc, view, params, limit=100):
-        api = '{0}/_design/{1}/_view/{2}'.format(bucket, design_doc, view)
+        if view is None:
+            api = '{0}/{1}'.format(bucket, design_doc)
+        else:
+            api = '{0}/_design/{1}/_view/{2}'.format(bucket, design_doc, view)
         num_params = 0
         if limit is not None:
             num_params = 1
