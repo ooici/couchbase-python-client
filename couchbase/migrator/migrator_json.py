@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-import json
+import simplejson as json
 
 from couchbase.migrator.migrator import Reader, Writer
 

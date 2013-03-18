@@ -16,7 +16,7 @@
 #
 
 import uuid
-import json
+import simplejson as json
 import time
 from copy import deepcopy
 from threading import Thread, Lock

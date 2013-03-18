@@ -18,7 +18,7 @@
 import random
 import string
 import uuid
-import json
+import simplejson as json
 import time
 import os
 import sys

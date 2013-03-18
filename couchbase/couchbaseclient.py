@@ -21,7 +21,7 @@ from threading import Thread, Lock
 import socket
 import zlib
 import warnings
-import json
+import simplejson as json
 from copy import deepcopy
 
 import requests

@@ -23,7 +23,7 @@ import types
 import warnings
 import uuid
 import time
-import json
+import simplejson as json
 from collections import Set
 
 from nose.plugins.attrib import attr

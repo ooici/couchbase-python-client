@@ -32,7 +32,7 @@ destinations = [{'type':'dir', 'class':'DirWriter',
                  'example':'dir://<directory>'}]
 
 import os
-import json
+import simplejson as json
 
 from couchbase.migrator.migrator import Reader, Writer
 

@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-import json
+import simplejson as json
 import urllib
 import socket
 import time
